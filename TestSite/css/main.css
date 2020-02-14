@@ -1,0 +1,45 @@
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+body {
+  font-family: Roboto;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.header {
+  background-color: #f7fafc;
+  background-image: linear-gradient(to right, #fd712c 0%, #f21780 100%);
+  color: #ffffff;
+}
+.flex-container {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  justify-content: space-between;
+
+}
+nav a {
+  color: #ffffff;
+  margin-left: 55px;
+  font-size: 14px;
+}
+.logo {
+  font-family: Dosis;
+  font-weight: 700;
+  
+}
+.logo > span {
+  font-size: 36px;
+}
+.download-button {
+  width: 153px;
+  height: 35px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  color: #222222;
+  padding: 21px 30px;
+}
