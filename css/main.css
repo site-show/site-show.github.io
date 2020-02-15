@@ -6,6 +6,7 @@ body {
   font-family: Roboto;
   margin: 0;
   padding: 0;
+  min-width: 1140px;
 }
 a {
   text-decoration: none;
@@ -82,4 +83,13 @@ nav a {
 .explore-button:hover {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   border-color: rgba(0, 0, 0, 0.1);
+}
+@media only screen and (max-width: 600px) {
+  .flex-container {
+   flex-wrap: wrap;
+/* * {font-size: 50%;}
+
+  }
+
+
 }
