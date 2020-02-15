@@ -85,12 +85,10 @@ nav a {
   border-color: rgba(0, 0, 0, 0.1);
 }
 @media only screen and (max-width: 600px) {
-  .flex-container {
-   flex-wrap: wrap;
-   align-content: center;
-
-  } 
-  
+  .container {
+   
+    width: 1000px;
+  }
 
 
 
