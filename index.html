@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600,700|Roboto:300,400,500&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/cb1ba7b3ac.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
 </head>
 <body>
   
@@ -211,10 +213,78 @@ Demand is driven by price and the free audio players like Windows Media Player w
       <p><i class="fas fa-check-circle"></i>Very easy to customize : set up in minutes</p>
     </div>
     </section>
-  <section>
-    <div class="container"></div>
+  
+
+    <section>
+    <div class="container">
+      
+      <div class="price-description">
+        <h2>We've got the perfect package for you</h2>
+        <p>Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a <br> UX designer, why develop this totally separate skill?</p>
+      </div>
+      
+      <div class="price-cards">
+        
+        <div class="price-cards__item">
+          <div class="price-name">Basic</div>
+          <div class="price"><sup>$</sup>12.0<sub>/m</sub></div>
+          <div class="advantages">
+            <p class="advantage-item">One User</p>
+            <p class="advantage-item">Multiple Access</p>
+            <p class="advantage-item">SMS Support</p>
+            <p class="advantage-item">24/7 Online Support</p>
+          </div>
+          <div class="trial">Start Free Trial</div>
+          <a class="buy-button">Buy Now</a>
+        </div>
+        
+        <div class="price-cards__item">
+          <div class="price-name">Standart</div>
+          <div class="price"><sup>$</sup>24.0<sub>/m</sub></div>
+          <div class="advantages">
+            <p class="advantage-item">Five Users</p>
+            <p class="advantage-item">Multiple Access</p>
+            <p class="advantage-item">SMS Support</p>
+            <p class="advantage-item">24/7 Online Support</p>
+          </div>
+          <div class="trial">Start Free Trial</div>
+          <a class="buy-button">Buy Now</a>
+        </div>
+
+        <div class="price-cards__item">
+          <div class="price-name">Premium</div>
+          <div class="price"><sup>$</sup>250.0<sub>/m</sub></div>
+          <div class="advantages">
+            <p class="advantage-item">Twenty Users</p>
+            <p class="advantage-item">Multiple Access</p>
+            <p class="advantage-item">SMS Support</p>
+            <p class="advantage-item">24/7 Online Support</p>
+          </div>
+          <div class="trial">Start Free Trial</div>
+          <a class="buy-button">Buy Now</a>
+
+        </div>
+        <div class="price-cards__item">
+          <div class="price-name">Enterprise</div>
+          <div class="price"><sup>$</sup>999.0<sub>/m</sub></div>
+          <div class="advantages">
+            <p class="advantage-item">Unlimited Users</p>
+            <p class="advantage-item">Multiple Access</p>
+            <p class="advantage-item">SMS Support</p>
+            <p class="advantage-item">24/7 Online Support</p>
+          </div>
+          <div class="trial">Start Free Trial</div>
+          <a class="buy-button">Buy Now</a>
+        </div>
+      </div>
+    </div>
   </section>
+
+    <div class="a" style="height: 500px"></div>
+
+
   <section>
+    
     <div class="container"></div>
   </section>
   <section>
@@ -229,5 +299,14 @@ Demand is driven by price and the free audio players like Windows Media Player w
   <footer>
     <div class="container"></div>
   </footer>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.a').slick({
+        // setting-name: setting-value
+      });
+    });
+  </script>
 </body>
 </html>
