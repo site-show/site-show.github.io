@@ -264,6 +264,8 @@ nav a {
 }
 
 .price-cards .price-cards__item {
+  float: left;
+  display: inline-block;
   margin: 10px;
   width: 263px;
   height: 481px;
