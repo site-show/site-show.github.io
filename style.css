@@ -1,0 +1,10 @@
+body {
+  
+}
+.header {
+  background-image: url(img/main.jpg);
+  height: 10000px;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: contain;
+}
