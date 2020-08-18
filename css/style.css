@@ -140,11 +140,10 @@ margin-bottom: 50px;
 .default__btn {
   position: relative;
   color: #fff;
-  font-size: 16px;
   line-height: 18px;
   letter-spacing: 1px;
   border: 1px solid #ffc222;
-  padding: 10px 42px 10px 22px;
+  padding: 10px 22px 10px 22px;
   font-weight: 500;
   font-family: 'Roboto', sans-serif;
   border-right-width: 20px;
@@ -195,20 +194,22 @@ z-index: 3;
 .slick-disabled {
   visibility: hidden;
 }
-.about {
+.services {
   padding: 50px 0px 30px;
 }
-.about__top {
+.services__top {
   display: flex;
   justify-content: space-between;
   margin-bottom: 60px;
   }
-.about__title-box {
+.services__title-box,
+.form__title-box {
   max-width: 520px;
   padding-left: 140px;
   position: relative;
 }
-.about__title-box:before {
+.services__title-box:before,
+.form__title-box:before {
   content: "";
   position: absolute;
   width: 100px;
@@ -217,7 +218,8 @@ z-index: 3;
   left: 0px;
   top: 11px;
 }
-.about__title {
+.services__title,
+.form__title {
 font-size: 24px;
 line-height: 24px;
 font-family: 'Roboto', sans-serif;
@@ -225,11 +227,12 @@ font-weight: 500;
 color: #212020;
 margin-bottom: 15px;
 }
-.about__text {
+.services__text,
+.form__text {
 line-height: 18px;
 letter-spacing: 0.1px;
 }
-.about__btn a{
+.services__btn a {
   font-family: 'Roboto', sans-serif;
   line-height: 24px;
   letter-spacing: 0.25px;
@@ -237,19 +240,19 @@ letter-spacing: 0.1px;
   padding: 5px 30px;
   border: 3px solid #e6e6e6;
 }
-.about__items {
+.services__items {
   display: flex;
   justify-content: space-between;
 }
-.about__item {
+.services__item {
   position: relative;
   max-width: 360px;
   text-align: center;
   padding: 24px 0px 40px;
-  border: 1px solid #000;
-  min-height: 375px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 7px 24.3px 2.7px rgba(91, 89, 89, 0.14);
 }
-.about__item-title {
+.services__item-title {
   color: #212020;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -257,18 +260,131 @@ letter-spacing: 0.1px;
   line-height: 24px;
   padding: 24px 0px;
 }
-.about__item-text {
-  line-height: 10px;
+.services__item:last-child .services__item-title {
+padding-top: 34px;
+}
+.services__item-text {
+  line-height: 18px;
   letter-spacing: 0.1px;
   padding: 0px 30px 80px;
 }
-.about__item-btn {
+.services__item-btn {
   position: absolute;
   bottom: 40px;
+  left: 0;
+  right: 0;
 }
-.about__item-btn .default__btn{
+.services__item-btn .default__btn{
  color: #373636;
 }
-.about__item-btn .default__btn:after {
+.services__item-btn .default__btn:after {
  color: #fff;
 }
+.services__item-link {
+ color: #050505;
+ font-family: 'Roboto', sans-serif;
+ font-weight: 500;
+ border-bottom: 1px solid #050505;
+ margin-right: 60px;
+}
+
+.Прямоугольник_32 {
+  background-color: rgb(249, 249, 249);
+  box-shadow: 0px 7px 24.3px 2.7px rgba(91, 89, 89, 0.14);
+  position: absolute;
+  left: 389px;
+  top: 848px;
+  width: 360px;
+  height: 363px;
+  z-index: 62;
+}
+/* About */
+.about {
+  background-image: url(../img/darken.png),
+  url(../img/about-bg.jpg);
+  background-size: cover;
+  min-height: 300px;
+  padding: 35px 0px 45px;
+}
+.about__title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #fff;
+  margin-bottom: 24px;
+}
+.about__text {
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #d3d2d2;
+  max-width: 545px;
+  margin-bottom: 30px;
+}
+.about__btn:after {
+color: #000;
+}
+.form {
+  padding-top: 30px;
+}
+.form__inner {
+  padding-bottom: 40px;
+  background-image: url(../img/form-img.jpg);
+  background-repeat: no-repeat;
+  min-height: 464px;
+  background-position: bottom right;
+  font-family: 'Roboto', sans-serif;
+  line-height: 36px;
+  font-weight: 500;
+  color: #282828;
+}
+.form__box {
+  max-width: 848px;
+  padding-top: 45px;
+}
+.form__box-inner {
+display: flex;
+justify-content: space-between;
+}
+.form__box-left {
+  max-width: 260px;
+  width: 100%;
+}
+.form__box-right {
+  max-width: 555px;
+  width: 100%;
+}
+.form__box-inner label,
+.form__box-inner input,
+.form__box-inner textarea,
+.form__box-inner select {
+  display: block;
+  width: 100%;
+}
+.form__box-inner input {
+  margin-bottom: 8px;
+  outline: none;
+  height: 40px;
+  border: 1px solid #e6e6e6;
+  padding: 0px 4px;
+}
+.form__box-inner select {
+  outline: none;
+  height: 40px;
+  border: 1px solid #e6e6e6;
+}
+.form__box-inner textarea {
+  outline: none;
+  padding: 5px;
+  height: 208px;
+  border: 1px solid #e6e6e6;
+  resize: none;
+  margin-bottom: 44px;
+
+}
+ .form__box-inner button {
+   background-color: #fff;
+   color: #282828;
+   float: right;
+ }
+
